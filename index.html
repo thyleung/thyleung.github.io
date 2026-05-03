@@ -1,6 +1,10 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Teri Leung</title>
+
     <style>
       html {
         font-family: proxima-nova, "HelveticaNeue", Helvetica, Arial, sans-serif;
@@ -8,77 +12,199 @@
         -moz-osx-font-smoothing: grayscale;
         text-rendering: optimizeLegibility;
       }
+
+      body {
+        margin: 0;
+      }
+
       a {
-        color: #8DDBE0;
+        color: #5FA8A6;
         text-decoration: none;
-        font-weight: bold;
+        font-weight: 500;
       }
+
       a:hover {
-        color: #9BC4BC;
+        color: #4A8F8D;
         text-decoration: underline;
-        font-weight: bold;
       }
+
+      a:focus-visible {
+        outline: 2px solid currentColor;
+        outline-offset: 4px;
+        border-radius: 4px;
+      }
+
       .container {
-        margin: 150px auto 150px;
-        width: 650px;
+        margin: 140px auto;
+        width: 100%;
+        max-width: 900px;
+        padding: 0 24px;
+        box-sizing: border-box;
+
         color: #4B5043;
         font-size: 1.3em;
         line-height: 1.4;
       }
+
       .social {
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+        margin: 30px 0 50px;
+      }
+
+      .social a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .social i {
+        font-size: 28px;
+      }
+
+      h3 {
+        margin-top: 40px;
+        margin-bottom: 12px;
+      }
+
+      ul {
+        padding-left: 20px;
+        margin-top: 10px;
+      }
+
+      li {
+        margin-bottom: 18px;
+      }
+
+      li p {
+        margin: 6px 0 0 0;
+        color: #555;
+      }
+
+      .date {
+        color: #5FA8A6;
+        font-size: 0.85em;
+        margin-left: 6px;
+        font-weight: 500;
       }
     </style>
-    
-    <!-- Font awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
 
   <body>
-    <div class="container">
-      <p>Hi!  Bonjour!  &#20320;&#22909;!  I'm <strong>Teri Leung</strong>.  I'm a software engineer based in Toronto, Canada.</p>
-
-      <p>Feel free to reach out via social channels.</p>
-      
-      <p class='social'>
-        <a href="http://www.linkedin.com/in/terileungeit"><i class="fa fa-linkedin-square fa-2x"></i></a>
-        <a href="https://github.com/thyleung/"><i class="fa fa-github-square fa-2x"></i></a>
-        <a href="mailto:terileungeit@gmail.com"><i class="fa fa-envelope-o fa-2x"></i></a>
+    <main class="container">
+      <p>
+        Hi! Bonjour! &#20320;&#22909;! I'm <strong>Teri Leung</strong>. I'm a
+        software engineer based in Toronto, Canada.
       </p>
 
-      <p>
-      <h3>Projects</h3>
+      <p>Feel free to reach out via social channels.</p>
+
+      <div class="social">
+        <a
+          href="https://www.linkedin.com/in/terileungeit"
+          aria-label="LinkedIn profile"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+        </a>
+
+        <a
+          href="https://github.com/thyleung/"
+          aria-label="GitHub profile"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+        </a>
+
+        <a
+          href="https://medium.com/@teri.leung/"
+          aria-label="Medium articles"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-medium" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <h3>Writing & Projects</h3>
 
       <ul>
         <li>
-          <a href='https://medium.com/@teri.leung/scaffolding-is-easy-getting-ai-behaviour-right-in-healthcare-isnt-6f7527016c48'>AI Messaging Prototype (Healthcare)</a>
-          <p>Explored how AI can translate backend system state into user-facing messages using React, Django, and LLM APIs. Focused on prompt design, tone control, and reducing misleading or unnecessary guidance in a healthcare context.</p>
+          <a
+            href="https://medium.com/@teri.leung/understanding-a-legacy-healthcare-codebase-using-ai-28d24f154d22"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Understanding a legacy healthcare codebase using AI
+          </a>
+          <span class="date">(May 2026)</span>
+          <p>
+            Explored developer experience, AI tooling, and the realities of
+            working with large-scale legacy applications.
+          </p>
         </li>
-      	<li>
-      		<a href='https://github.com/thyleung/dementiahack'>	MDs Hacking Dementia
-      		</a>
-      	</li>
-      	<p>A 2-day hackathon project to screen a person for dementia on a mobile app</p>
-      	<li>
-      		<a href = 'https://github.com/thyleung/Lex'>
-      		Lex
-      		</a>
-      	</li>
-      	<p>A client-side app to demo a language exchange platform for EduTech Hackathon 2014</p>
+
+        <li>
+          <a
+            href="https://medium.com/@teri.leung/building-ai-messaging-for-healthcare-systems-d828c5704590"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Building AI messaging for healthcare systems
+          </a>
+          <span class="date">(May 2026)</span>
+          <p>
+            Explored how to constrain AI-generated messaging from backend system
+            state, focusing on tone control and avoiding misleading guidance in
+            healthcare contexts.
+          </p>
+        </li>
+
+        <li>
+          <a
+            href="https://github.com/thyleung/dementiahack"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            MDs Hacking Dementia
+          </a>
+          <span class="date">(2015)</span>
+          <p>A 2-day hackathon project to screen a person for dementia on a mobile app</p>
+        </li>
+
+        <li>
+          <a
+            href="https://github.com/thyleung/Lex"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Lex
+          </a>
+          <span class="date">(2014)</span>
+          <p>Language exchange prototype for EduTech Hackathon</p>
+        </li>
       </ul>
+    </main>
 
-
-      </p>
-    </div>
-
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-J85TVSH5MB"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-J85TVSH5MB");
+    </script>
   </body>
-
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-52842309-1', 'auto');
-    ga('send', 'pageview');
-  </script>
 </html>
